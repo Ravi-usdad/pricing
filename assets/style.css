@@ -1,0 +1,391 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/./fonts/Montserrat-Black.woff2') format('woff2'),
+        url('./fonts/Montserrat-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('./fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-ExtraLight.woff2') format('woff2'),
+        url('./fonts/Montserrat-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('./fonts/Montserrat-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-SemiBoldItalic.woff2') format('woff2'),
+        url('./fonts/Montserrat-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Light.woff2') format('woff2'),
+        url('./fonts/Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('./fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('./fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-ThinItalic.woff2') format('woff2'),
+        url('./fonts/Montserrat-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 24px;
+    color: #4b4b60;
+    font-weight: 400;
+}
+
+.content_box_con{
+    max-width: 1330px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.request_demo_button{
+    width: fit-content;
+    margin-top: 20px;
+    margin-left: auto;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.main_title {
+    max-width: 820px;
+    width: 100%;
+    margin: 60px auto 20px;
+    text-align: center;
+}
+
+.main_title .sub_title {
+    font-weight: 600;
+}
+
+.main_title h1 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.main_title h1 span {
+    position: relative;
+    display: inline-block;
+}
+
+.main_title h1 span::before {
+    content: " ";
+    background-image: url(./img/uline--1.e1b10d5a.svg) !important;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -.25em;
+    bottom: -.225em;
+    left: -.25em;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background: no-repeat bottom;
+    background-size: 100% .45em;
+    pointer-events: none;
+}
+
+.price_box_section {
+    background-color: rgb(247, 248, 250);
+    background-image: url("./img/grey-wash-bgnd-3.svg");
+    background-repeat: no-repeat;
+    padding: 100px 15px 40px;
+    margin-bottom: 50px;
+    background-size: contain;
+}
+
+.price_box_section .price_box_inner {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
+.price_box_section .price_box_inner .item_box {
+    width: 100%;
+    background-color: #fff;
+    color: #4b4b60;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .08);
+    padding: 63px 30px;
+    border: 2px solid #a1a2b2;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.price_box_section .price_box_inner .item_box.is-selected{
+    border: 2px solid #003871;
+}
+.price_box_section .price_box_inner .item_box .recommend_card{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #003871;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 12px 16px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
+.price_box_section .price_box_inner .item_box.is-selected .recommend_card{
+    display: block;
+}
+
+.price_box_section .price_box_inner .item_box .item_inner_box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.price_box_inner .item_box .item_inner_box .main_tt {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: .54px;
+    font-weight: 600;
+    color: #003871;
+    text-align: center;
+}
+
+.price_box_inner .item_box .item_inner_box .plan-card__pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.price_box_inner .item_box .item_inner_box .plan-card__pricing .model__value {
+    font-size: 60px;
+    line-height: 40px;
+    color: #2f326a;
+    font-weight: 700;
+}
+
+.price_box_inner .item_box .item_inner_box .cio-font-poppins{
+    text-align: center;
+}
+
+.button_strat,
+.button_strat_get:hover{
+    background: #003871;
+    border: 1px solid #003871;
+    color: #fff;
+    border-radius: 30px;
+    padding: 12px 23px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+.button_strat_get{
+    background: #fff;
+    border: 1px solid #003871;
+    color: #003871;
+    border-radius: 30px;
+    padding: 12px 23px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.button_strat:hover{
+    background: #fff;
+    color: #003871;
+}
+
+.cio-plan-card__details ul{
+    padding-left: 16px;
+}
+
+.cio-plan-card__details ul li{
+    padding-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4b4b60;
+}
+.cio-plan-card__details ul li a{
+    color: #003871;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.custio-feature-grid{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 15px  ;
+}
+
+.custio-feature-grid .journeys{ 
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #003871;
+    position: relative;
+}
+
+.custio-feature-grid .journeys svg{
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+}
+
+.feature-grid{
+    margin-top: 30px;
+}
+
+.feature-grid .feature-grid__label_item{
+    display: flex;
+    border-radius: 8px;
+}
+
+.feature-grid .feature-grid__label_item:nth-child(even){
+    background: #f7f8fa;
+}
+
+.feature-grid .feature-grid__label_item .feature-grid__label{
+    width: 100%;
+    padding: 0 20px;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #4b4b60;
+}
+
+.feature-grid .feature-grid__label_item .feature-grid__col_2{
+    display: flex;
+}
+
+.feature-grid .feature-grid__label_item .feature-grid__col_2 .feature_text{
+    text-align: center;
+    width: 216px;
+    min-height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4b4b60;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #4b4b60;
+}
+
+.feature-grid .feature-grid__label_item .feature-grid__col_2 .feature_text:nth-child(2){
+    border-left: 1px solid #f7f8fa;
+    border-right: 1px solid #f7f8fa;
+}
+
+@media(max-width:991px){
+    .main_title h1 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .feature-grid .feature-grid__label_item{
+        flex-direction: column;
+        width: 100%;
+    }
+    .feature-grid .feature-grid__label_item:nth-child(even){
+        background: #fff;
+    }
+    .feature-grid .feature-grid__label_item .feature-grid__label{
+        background: #f7f8fa;
+        border-radius: 8px;
+       justify-content: center;
+    }
+    .feature-grid .feature-grid__label_item .feature-grid__col_2 .feature_text{
+        width: 33%;
+    }
+    .price_box_inner .item_box .item_inner_box .plan-card__pricing .model__value {
+        font-size: 50px;
+        line-height: 35px;
+        color: #2f326a;
+        font-weight: 700;
+    }
+}
+
+@media(max-width:767px){
+    .price_box_section .price_box_inner .item_box{
+        padding: 62px 15px;
+    }
+    .price_box_section {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:640px){
+    .price_box_section .price_box_inner {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
