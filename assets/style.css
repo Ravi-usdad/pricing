@@ -195,7 +195,7 @@ body {
     display: flex;
 }
 
-.price_box_section .price_box_inner .item_box_section{
+.price_box_section .price_box_inner .item_box_section {
     display: flex;
     gap: 20px;
 }
@@ -212,7 +212,7 @@ body {
     position: relative;
 }
 
-.faq_content_inner .faq_item .faq_content ul{
+.faq_content_inner .faq_item .faq_content ul {
     padding-left: 30px;
     display: flex;
     flex-direction: column;
@@ -320,6 +320,7 @@ body {
     padding-bottom: 8px;
     font-size: 14px;
     line-height: 20px;
+    font-weight: 700;
     color: #4b4b60;
 }
 
@@ -482,7 +483,8 @@ body {
     border-radius: 50px;
     margin: 0 auto 30px;
 }
-.uk-margin .button_tab{
+
+.uk-margin .button_tab {
     flex: 1;
     display: flex;
     align-items: center;
@@ -493,9 +495,10 @@ body {
     color: #003871;
     text-decoration: none;
     font-weight: 500;
+    cursor: pointer;
 }
 
-.uk-margin .button_tab.active{
+.uk-margin .button_tab.active {
     color: #fff;
     background: #003871;
 }
@@ -504,26 +507,6 @@ body {
     .main_title h1 {
         font-size: 34px;
         line-height: 40px;
-    }
-
-    .feature-grid .feature-grid__label_item {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .feature-grid .feature-grid__label_item:nth-child(even) {
-        background: #fff;
-    }
-
-    .feature-grid .feature-grid__label_item .feature-grid__label {
-        background: #f7f8fa;
-        border-radius: 8px;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .feature-grid .feature-grid__label_item .feature-grid__col_2 .feature_text {
-        width: 50%;
     }
 
     .price_box_inner .item_box .item_inner_box .plan-card__pricing .model__value {
@@ -551,6 +534,9 @@ body {
         margin-top: 10px;
         margin-bottom: 15px;
     }
+    .feature-grid .feature-grid__label_item .feature-grid__col_2 .feature_text{
+        width: 120px;
+    }
 }
 
 @media(max-width:767px) {
@@ -561,9 +547,17 @@ body {
     .price_box_section {
         margin-bottom: 30px;
     }
+    .feature-grid .feature-grid__label_item .feature-grid__col_2 .feature_text{
+        width: 80px;
+    }
 }
 
+
 @media(max-width:640px) {
+    .header {
+        padding: 5px 15px;
+    }
+
     .price_box_section .price_box_inner .item_box_section {
         flex-direction: column;
         gap: 30px;
@@ -573,11 +567,25 @@ body {
         font-size: 18px;
         line-height: 30px;
     }
-}
 
-@media(max-width:640px) {
-    .header {
-        padding: 5px 15px;
+    .feature-grid .feature-grid__label_item {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .feature-grid .feature-grid__label_item:nth-child(even) {
+        background: #fff;
+    }
+
+    .feature-grid .feature-grid__label_item .feature-grid__label {
+        background: #f7f8fa;
+        border-radius: 8px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .feature-grid .feature-grid__label_item .feature-grid__col_2 .feature_text {
+        width: 50%;
     }
 
     .product-page-main {
